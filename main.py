@@ -16,8 +16,7 @@ def calculate_runway_and_format(cash, monthly_expenses, monthly_income,
                                for month in range(months_until_run_out)]
 
   end_date = datetime.now() + pd.DateOffset(months=months_until_run_out)
-  end_date_str = end_date.strftime("%b %Y")
-
+  end_date_str = end_date.strftime("%b %Y"
   years, months = divmod(months_until_run_out, 12)
   if years > 0 and months > 0:
     runway_formatted = f"{years} yr {months} mos"
